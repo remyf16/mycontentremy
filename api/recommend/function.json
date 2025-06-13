@@ -2,7 +2,7 @@
   "scriptFile": "__init__.py",          // Le fichier principal contenant la fonction Python
   "bindings": [
     {
-      "authLevel": "function",          // Niveau de sécurité : "function" = nécessite une clé d'API ; tu peux mettre "anonymous" en test
+      "authLevel": "anonymous",         // Niveau de sécurité :  "anonymous" pour les test
       "type": "httpTrigger",            // Type de déclencheur : HTTP
       "direction": "in",                // Entrée de la fonction
       "name": "req",                    // Nom de la variable dans le script Python
