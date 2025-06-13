@@ -1,0 +1,18 @@
+{
+  "scriptFile": "__init__.py",          // Le fichier principal contenant la fonction Python
+  "bindings": [
+    {
+      "authLevel": "function",          // Niveau de sécurité : "function" = nécessite une clé d'API ; tu peux mettre "anonymous" en test
+      "type": "httpTrigger",            // Type de déclencheur : HTTP
+      "direction": "in",                // Entrée de la fonction
+      "name": "req",                    // Nom de la variable dans le script Python
+      "methods": ["get", "post"],       // Méthodes HTTP autorisées
+      "route": "recommend"              // Route URL : ex. /api/recommend
+    },
+    {
+      "type": "http",                   // La réponse de la fonction est une réponse HTTP
+      "direction": "out",               // Sortie de la fonction
+      "name": "$return"                 // Retour de la fonction
+    }
+  ]
+}

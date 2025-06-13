@@ -1,0 +1,4 @@
+api/data/articles_embeddings.pickle
+*.pkl
+__pycache__/
+.ipynb_checkpoints/
