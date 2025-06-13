@@ -10,25 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout du code
+    - name: ⬇️ Checkout du code
       uses: actions/checkout@v3
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-
-    - name: Setup Azure Functions Core Tools
-      uses: Azure/setup-azure-functions@v1
-      with:
-        version: '4'
-
-    - name: Login to Azure
+    - name: 🔐 Login to Azure
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Deploy Function App
+    - name: 🚀 Deploy Function App
       uses: Azure/functions-action@v1
       with:
         app-name: mycontentremy
